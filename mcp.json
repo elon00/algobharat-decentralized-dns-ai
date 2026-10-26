@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-decentralized-dns-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "ABDNS"
+      },
+      "tools": [
+        {
+          "name": "verify_abdns_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat Decentralized DNS AI on Algorand."
+        },
+        {
+          "name": "execute_abdns_action",
+          "description": "Executes authenticated Infrastructure state transition."
+        }
+      ]
+    }
+  }
+}
